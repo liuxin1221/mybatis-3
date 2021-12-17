@@ -16,5 +16,6 @@
   </environments>
   <mappers>
     <mapper resource="resources/mapper/TestMapper.xml"/>
+    <mapper class="org.apache.ibatis.lx.annotation.mapper.AnnotationTestMapper"/>
   </mappers>
 </configuration>

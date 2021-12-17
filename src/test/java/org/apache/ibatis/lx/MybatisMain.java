@@ -76,7 +76,7 @@ public class MybatisMain {
     SqlSession session = sqlSessionFactory.openSession();
    // User user = session.selectOne("org.apache.ibatis.lx.mapper.TestMapper.selectUser",1);
     TestMapper mapper = session.getMapper(TestMapper.class);
-    User user = mapper.selectUser(1);  ////通过一系列代理后还是调用了session.selectOne
+    User user = mapper.selectUser(1);  //通过一系列代理后还是调用了session.selectOne
     System.out.println(user);
   }
 }
